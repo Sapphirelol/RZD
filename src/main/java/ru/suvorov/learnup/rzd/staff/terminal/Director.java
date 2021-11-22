@@ -13,6 +13,6 @@ public class Director extends Employee {
 
     @Override
     public void work() {
-        System.out.println(this.getName() + ": giving an order...");
+        System.out.println(this.getName() + ": раздает указания...");
     }
 }

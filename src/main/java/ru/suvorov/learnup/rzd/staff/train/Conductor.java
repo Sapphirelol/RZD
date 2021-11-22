@@ -17,9 +17,9 @@ public class Conductor extends Employee {
     public void work() {
         System.out.print(this.getName());
         if (new Random().nextBoolean()) {
-            System.out.println(": checking passenger tickets...");
+            System.out.println(": проверяет билеты...");
         } else {
-            System.out.println(": offer tea to passengers...");
+            System.out.println(": предлагает еду и напитки пассажирам...");
         }
     }
 }

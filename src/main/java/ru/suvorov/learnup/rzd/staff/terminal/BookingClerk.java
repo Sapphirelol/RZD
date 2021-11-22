@@ -13,7 +13,7 @@ public class BookingClerk extends Employee {
 
     @Override
     public void work() {
-        System.out.println(this.getName() + ": selling tickets...");
+        System.out.println(this.getName() + ": продает билеты...");
     }
 
 }

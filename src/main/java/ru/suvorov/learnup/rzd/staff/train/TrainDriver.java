@@ -1,6 +1,5 @@
 package ru.suvorov.learnup.rzd.staff.train;
 
-import ru.suvorov.learnup.rzd.Route;
 import ru.suvorov.learnup.rzd.staff.Employee;
 
 public class TrainDriver extends Employee {
@@ -14,10 +13,7 @@ public class TrainDriver extends Employee {
 
     @Override
     public void work() {
-        System.out.println(this.getName() + ": checking train before departure...");
+        System.out.println(this.getName() + ": ведет поезд...");
     }
 
-    public void work(Route route) {
-        System.out.println(this.getName() + ": driving train...");
-    }
 }

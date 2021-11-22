@@ -13,6 +13,6 @@ public class Manager extends Employee {
 
     @Override
     public void work() {
-        System.out.println(this.getName() + ": moving with hands, calling...");
+        System.out.println(this.getName() + ": moving with hands...\n calling somebody...");
     }
 }

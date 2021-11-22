@@ -18,17 +18,15 @@ public abstract class Employee {
     }
 
     public void go(Object from, Object to) {
-        System.out.println(this.getName() + " go from " + from.toString() + " to " + to.toString());
+        System.out.println(this.getName() + " идет от " + from.toString() + " к " + to.toString());
     }
 
     public abstract void work();
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+        return "Имя сотрудника - '" + name + '\'' +
+                ", возраст - " + age + "\n";
     }
 
     public String getName() {
