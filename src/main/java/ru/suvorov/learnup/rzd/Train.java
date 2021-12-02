@@ -1,6 +1,8 @@
 package ru.suvorov.learnup.rzd;
 
-public class Train {
+import ru.suvorov.learnup.rzd.interfaces.Announcer;
+
+public class Train implements Announcer {
     private String registerNumb;
     private int carriageCount;
     private String name;

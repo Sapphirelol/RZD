@@ -1,6 +1,8 @@
 package ru.suvorov.learnup.rzd;
 
-public class Station {
+import ru.suvorov.learnup.rzd.interfaces.Announcer;
+
+public class Station implements Announcer {
     private String name;
     private StationType type;
 

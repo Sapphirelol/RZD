@@ -1,10 +1,11 @@
 package ru.suvorov.learnup.rzd.staff.train;
 
+import ru.suvorov.learnup.rzd.interfaces.TicketSeller;
 import ru.suvorov.learnup.rzd.staff.Employee;
 
 import java.util.Random;
 
-public class Conductor extends Employee {
+public class Conductor extends Employee implements TicketSeller {
     public Conductor(String name, short age, short experience) {
         super(name, age, experience);
     }
