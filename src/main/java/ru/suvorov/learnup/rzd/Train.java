@@ -1,5 +1,6 @@
 package ru.suvorov.learnup.rzd;
 
+import ru.suvorov.learnup.rzd.exceptions.WrongRegisterNumbException;
 import ru.suvorov.learnup.rzd.interfaces.Announcer;
 
 public class Train implements Announcer {
@@ -9,6 +10,7 @@ public class Train implements Announcer {
     private TrainType type;
 
     public Train(String registerNumb, int carriageCount, String name, TrainType type) {
+        if (registerNumb.contains(" ")) throw new WrongRegisterNumbException();
         this.registerNumb = registerNumb;
         this.carriageCount = carriageCount;
         this.name = name;

@@ -1,5 +1,7 @@
 package ru.suvorov.learnup.rzd;
 
+import ru.suvorov.learnup.rzd.exceptions.LowStationsCountExceptions;
+
 import java.util.Arrays;
 
 public class Route {
@@ -7,6 +9,7 @@ public class Route {
     private Station[] route;
 
     public Route(String name, Station[] route) {
+        if (route.length < 2) throw new LowStationsCountExceptions();
         this.name = name;
         this.route = route;
     }

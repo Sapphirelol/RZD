@@ -1,5 +1,7 @@
 package ru.suvorov.learnup.rzd.staff;
 
+import ru.suvorov.learnup.rzd.Station;
+
 public abstract class Employee {
     private String name;
     private short age;
@@ -17,7 +19,7 @@ public abstract class Employee {
         this.experience = 0;
     }
 
-    public void go(Object from, Object to) {
+    public void go(Station from, Station to) {
         System.out.println(this.getName() + " идет от " + from.toString() + " к " + to.toString());
     }
 
